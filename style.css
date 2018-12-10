@@ -1,0 +1,211 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Muli', sans-serif;
+}
+.fonts {
+	font-family: 'Muli', sans-serif;
+	color: #FFFFFF;
+	font-size: 20px;
+}
+nav{
+	height: 50px;
+	background-color: #8994FF;
+	border-bottom: 1px black solid;
+	display: flex;
+	position: fixed;
+	width: 100%;
+}
+
+nav>div {
+	height: 100%;
+}
+#search_icon, #logo {
+	width: 100%;
+	height: 100%;
+}
+
+.nav_logo, .nav_search {
+	width: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+button{
+	border:none;
+	width: 50px;
+	height: 50px;
+	background-size: cover;
+	background-color: rgba(0,0,0,0);
+}
+.nav_logo>button {
+	background-image: url(img/logo.png);
+}
+.nav_menu {
+	width: 90%;
+	border-right: 1px black;
+	display: flex;
+}
+.nav_menu > button {
+	height: 100%;
+	width: 25%;
+	background-color: #8994FF;
+	border: none; 
+	transition-duration: 0.6s;
+	font-family: 'Muli', sans-serif;
+}
+.nav_menu > button:hover {
+	background-color: #8694AF;
+}
+
+#search_input, #search_submit{
+	position: fixed;
+	right: 0;
+	opacity: 0;
+	top: 50px;
+	border: 1px black solid;
+	transition-duration: 1s;
+}
+#search_input {
+	width: 20%;
+}
+.nav_search>button{
+	background-image: url(img/search.png);
+}
+.nav_search>button:active, .nav_logo>button:active {
+	width: 40px;
+	height: 40px;
+}
+
+header{
+	min-height: 500px;
+	background-image: url(img/header.jpg);
+	border-bottom: 1px black solid;
+	display: flex;
+	background-position: bottom center;      
+	background-repeat: no-repeat;      
+	background-attachment: fixed;      
+	background-size: cover;
+	justify-content: flex-start;
+	align-items: center;
+}
+.left_header {
+	width: 50%;
+	background-color: rgba(0,0,0,0.5);
+	margin-left: 3.5%;
+	
+}
+.right_header{
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	width: 50%;
+	margin-right: 20%;
+}
+.right_header>button{
+	width: 25%;
+	font-size:24px;
+	font-weight: bold;
+	background-color: rgba(255,255,255,0.5);
+	height: 100%;
+	border: 3px #8994FF solid; 
+	border-radius: 20%;
+	transition-duration: 0.6s;
+	font-family: 'Muli', sans-serif;
+}
+#main_title_header {
+	color: #ffffff;
+	font-size: 30px;
+  	font-weight: 700;
+  	text-align: left;
+  	padding-left: 3.7%;
+}
+#title_header  {
+	color: #ffffff;
+	font-size: 16px;
+  	font-weight: 700;
+  	text-align: left;
+  	padding-left: 3.7%;
+}
+article {
+	min-height: 800px;
+	background-color: #B4DCE5;
+	border-bottom: 1px black solid;
+	display: flex;
+	flex-direction: column;
+}
+.department_block {
+	display: flex;
+	justify-content: center;
+}
+.department{
+	width: 21.5%;
+	min-height: 350px;
+	border: 1px black solid;
+	margin: 1%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-align: center;
+}
+#therapist {
+	background-image: url(img/therapist.png);
+}
+#diagnostic {
+	background-image: url(img/diagnostic.jpg);
+}
+#cardiologist {
+	background-image: url(img/cardiologist.png);
+}
+#surgeon {
+	background-image: url(img/surgeon.jpg);
+}
+#title_white{
+	color: #FFFFFF;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.department>p {
+  opacity: 0;
+  color: #fff;
+  transition: .5s ease;
+  font-size: 16px;
+  font-weight: 550;
+}
+.department:hover p{
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: 1s;
+}
+.service_block {
+	display: flex;
+	justify-content: center;
+}
+.service {
+	width: 16.5%;
+	min-height: 200px;
+	border: 1px black solid;
+	border-radius: 50%;
+	margin: 1%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-align: center;
+}
+#doctors{
+	display: flex;
+	margin: 1%;
+}
+#doctors_text{
+	margin: 1%;
+}
+footer{
+	height: 250px;
+	background-color: #bfbcdb;
+	display: flex;
+}
+
+#logologo{
+	display:none;
+}
